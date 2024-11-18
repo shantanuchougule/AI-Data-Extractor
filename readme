@@ -1,0 +1,33 @@
+# AI Data Extractor
+
+This is a web application built using Streamlit that allows users to extract specific information from the web based on a custom query. Users can upload a CSV file or connect a Google Sheet to extract data for a list of entities (e.g., company names) and retrieve specific information such as website links or contact details using the SerpApi.
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```
+   git clone <repo-url>
+   cd <project-folder>
+   ```
+2. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run the Streamlit app:
+   ```
+   streamlit run app/main.py
+   ```
+
+## Usage Guide
+
+1. **Upload your CSV file** containing entities.
+2. **Select the column** which contains the entities.
+3. **Enter a custom prompt** for information retrieval, like "What is the website of {entity}?"
+4. **Click on Run Search and Extract** to see the extracted results.
+5. **Download the results** as a CSV file.
+
+## Third-Party Tools Used
+
+- **SerpApi**: Used to perform search engine queries and extract relevant information.
+- **Streamlit**: For building the user interface.
+- **Pandas**: For handling CSV file uploads and data manipulation.
